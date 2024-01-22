@@ -10,11 +10,46 @@ img {
     filter: saturate(150%);
 }
 
+nav{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    background: rgb(250, 250, 250);
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav a{
+    height: 100%;
+}
+
+nav img{
+    height: 90%;
+    border-radius: 50%;
+    border: 1px solid rgb(157, 157, 157);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 #title {
     text-transform: uppercase;
     font-weight: lighter;
     font-size: 1.5rem;
     font-family: "Lilita One", sans-serif;
+}
+
+main {
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    align-items: start;
 }
 
 .banner {
@@ -31,6 +66,7 @@ img {
 }
 
 .banner .overlay {
+    margin-top: 40px;
     position: absolute;
     background: rgba(0, 0, 0, 0.5);
     top: 0;
@@ -66,26 +102,39 @@ img {
     max-width: 1000px;
     width: calc(100% - 20px);
     margin: 0 auto;
-    padding: 0px 10px;
+    padding: 0px 20px;
 }
 
-#menu {}
+.menu {
+    position: relative;
+}
 
-#categoria {
-    padding: 20px 0 10px 0;
+.categoria {
+    padding: 10px 5px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
     text-transform: uppercase;
     font-weight: lighter;
     font-size: 1rem;
     font-family: "Lilita One", sans-serif;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(184, 184, 184);
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    color: rgb(149, 149, 149);
 }
 
-#menu .container {
+.categoria:hover {
+    background: rgb(245, 243, 245);
+}
+
+.menu .container {
     max-width: 1000px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 15px;
+    display: none;
 }
 
 .menuItem {
@@ -118,30 +167,105 @@ img {
 
 #canasta {
     margin-top: 30px;
-    display: flex;
-    align-items: center;
-    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    padding: 20px 5px;
+    height: auto;
     justify-content: space-evenly;
-    background: rgb(225, 225, 225);
-    position: sticky;
-    bottom: 0;
+    background: rgb(245, 245, 245);
 }
 
-#canasta h2{
+#canasta h2 {
     font-family: "Lilita One", sans-serif;
+    padding: 0;
+    margin: 0;
     text-transform: uppercase;
     font-weight: lighter;
     font-size: 1rem;
+    padding-bottom: 10px;
+}
+
+#canasta p {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.7rem;
+    padding: 0;
+    margin: 0;
+}
+
+#canasta #fechaHora {
+    padding: 10px 0 5px 0;
+    font-weight: bold;
+}
+
+#canasta #datosFormulario {
+    padding: 5px 0 10px 0;
+}
+
+#canasta #listaCanasta {
+    padding: 10px 0;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+}
+
+#canasta li {
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 5px 0;
 }
 
 /* Estilos para el botón de imprimir */
-#btnImprimir {
+#btnImprimir,
+#btnBorrarDatos {
     margin-top: 10px;
     padding: 10px;
-    background-color: #4caf50;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+}
+
+#btnImprimir {
+    background-color: #4caf50;
+}
+
+#btnBorrarDatos {
+    background-color: #ff4343;
+}
+
+/* FORMULARIO CANASTA */
+
+#formularioCanasta{
+    margin-top: 20px;
+    padding: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: auto;
+}
+
+#formularioCanasta h1{
+    display: flex;
+    gap: 10px;
+    font-weight: lighter;
+    font-size: 1rem;
+    font-family: "Lilita One", sans-serif;
+}
+
+#formularioCanasta label{
+    font-weight: light;
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+}
+
+#formularioCanasta input,
+#formularioCanasta textarea{
+    border: none;
+    border: 1px solid rgb(213, 213, 213);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 /* Estilos para la impresión */

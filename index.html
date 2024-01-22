@@ -20,103 +20,137 @@
     <!--
     <h1 id="title">Sistema de Comandas</h1>-->
 
+    <nav>
+        <a href=""><img src="a4aaaa26-0969-4490-8e35-9e14efcfd152.jpg" alt=""></a>
+    </nav>
+
     <div class="banner">
-        <img src="https://res.cloudinary.com/dddlebwyr/image/upload/w_auto/f_auto/q_auto/Atracciones/Piscinas/VCLNDIA_IMG_2724_rucr8w.jpg" alt="">
+        <img src="https://res.cloudinary.com/dddlebwyr/image/upload/w_auto/f_auto/q_auto/Atracciones/Piscinas/VCLNDIA_IMG_2724_rucr8w.jpg"
+            alt="">
         <div class="overlay">
             <h1>SISTEMA DE COMANDAS</h1>
             <h2>Desarrollado por ZeyN</h2>
         </div>
     </div>
 
-    <div class="productos">
-        <div id="menu" id="Pollos a la leña">
-            <h1 id="categoria">Pollos a la leña</h1>
-            <div class="container">
-                <!-- Botones del menú -->
-                <div class="menuItem" onclick="agregarItem(this)">
-                    <img src="https://res.cloudinary.com/dddlebwyr/image/upload/w_200/f_auto/q_auto/Gastronomia/Restaurante/20220911_175238000_iOS_bd3osw.jpg"
-                        alt="">
-                    <h1>1/4 de pollo con papas y ensalada</h1>
+    <main>
+
+        <div class="productos">
+            <div class="menu" id="Pollos_a_la_leña">
+                <h1 class="categoria" onclick="toggleContainer(this)">Pollos a la leña<i
+                        class="fa-regular fa-circle-down"></i></h1>
+                <div class="container">
+                    <!-- Botones del menú -->
+                    <div class="menuItem" onclick="agregarItem(this)">
+                        <img src="https://res.cloudinary.com/dddlebwyr/image/upload/w_200/f_auto/q_auto/Gastronomia/Restaurante/20220911_175238000_iOS_bd3osw.jpg"
+                            alt="">
+                        <h1>1/4 de pollo con papas y ensalada</h1>
+                    </div>
+                    <div class="menuItem" onclick="agregarItem(this)">
+                        <img src="https://sumerlabs.com/sumer-app-90b8f.appspot.com/product_photos%2F697115b7af933fa7efb87d2559379baa%2Fac7d1ee0-3dec-11ec-af40-3577d9425182?alt=media&token=1cfb4e9e-9556-4318-aaee-2bd52bba12f3"
+                            alt="">
+                        <h1>1/4 de pollo con papas y chaufa</h1>
+                    </div>
+                    <div class="menuItem" onclick="agregarItem(this)">
+                        <img src="https://tofuu.getjusto.com/orioneat-prod-resized/fLakncEqXsZHD5HYL-1200-1200.webp"
+                            alt="">
+                        <h1>1/4 de pollo con papas y tallarin</h1>
+                    </div>
+                    <!-- Agrega más botones según el menú de tu restaurante -->
                 </div>
-                <div class="menuItem" onclick="agregarItem(this)">
-                    <img src="https://sumerlabs.com/sumer-app-90b8f.appspot.com/product_photos%2F697115b7af933fa7efb87d2559379baa%2Fac7d1ee0-3dec-11ec-af40-3577d9425182?alt=media&token=1cfb4e9e-9556-4318-aaee-2bd52bba12f3"
-                        alt="">
-                    <h1>1/4 de pollo con papas y chaufa</h1>
-                </div>
-                <div class="menuItem" onclick="agregarItem(this)">
-                    <img src="https://tofuu.getjusto.com/orioneat-prod-resized/fLakncEqXsZHD5HYL-1200-1200.webp" alt="">
-                    <h1>1/4 de pollo con papas y tallarin</h1>
-                </div>
-                <!-- Agrega más botones según el menú de tu restaurante -->
             </div>
+
+            <div class="menu" id="Saltados">
+                <h1 class="categoria" onclick="toggleContainer(this)">Saltados<i class="fa-regular fa-circle-down"></i>
+                </h1>
+                <div class="container">
+                    <!-- Botones del menú -->
+                    <div class="menuItem" onclick="agregarItem(this)">
+                        <img src="https://i.ytimg.com/vi/r2oGrH__hT0/maxresdefault.jpg" alt="">
+                        <h1>Lomo saltado con papas</h1>
+                    </div>
+                    <div class="menuItem" onclick="agregarItem(this)">
+                        <img src="https://i.ytimg.com/vi/kkebV3kJkHg/maxresdefault.jpg" alt="">
+                        <h1>Pollo saltado con papas</h1>
+                    </div>
+                    <div class="menuItem" onclick="agregarItem(this)">
+                        <img src="https://comidaperuanaweb.org/wp-content/uploads/2018/10/Receta-de-Tallarines-Saltado-de-Pollo-Carne-1-1-500x375.jpg"
+                            alt="">
+                        <h1>Tallarín saltado de pollo</h1>
+                    </div>
+                    <div class="menuItem" onclick="agregarItem(this)">
+                        <img src="https://larepublica.cronosmedia.glr.pe/migration/images/RGCTJNWBYFE3BKCXRQWDUQSA34.jpg"
+                            alt="">
+                        <h1>Tallarín saltado de lomo</h1>
+                    </div>
+                    <div class="menuItem" onclick="agregarItem(this)">
+                        <img src="https://content-cocina.lecturas.com/medio/2022/03/22/salteado-de-pollo-con-verduras-y-tallarines_9f35f4ac_1200x1200.jpg"
+                            alt="">
+                        <h1>Pollo al wok con fetuccini</h1>
+                    </div>
+                    <div class="menuItem" onclick="agregarItem(this)">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjXYnCq2KcS1RQ_nsDVVWBT_vxBEurXA9JbtlkFKnwoygDNry4_nCant5eScZi6yksSsE&usqp=CAU"
+                            alt="">
+                        <h1>Lomo al wok con fetuccini</h1>
+                    </div>
+                    <div class="menuItem" onclick="agregarItem(this)">
+                        <img src="https://okdiario.com/img/2017/01/12/arroz-chaufa-con-pollo_-receta-peruana.jpg"
+                            alt="">
+                        <h1>Arroz chaufa de pollo</h1>
+                    </div>
+                    <!-- Agrega más botones según el menú de tu restaurante -->
+                </div>
+            </div>
+
+            <div class="menu" id="Pescados">
+                <h1 class="categoria" onclick="toggleContainer(this)">Pescados<i class="fa-regular fa-circle-down"></i>
+                </h1>
+                <div class="container">
+                    <!-- Botones del menú -->
+                    <div class="menuItem" onclick="agregarItem(this)">
+                        <img src="https://res.cloudinary.com/dddlebwyr/image/upload/w_200/f_auto/q_auto/Gastronomia/Restaurante/ceviche_xsr4o2.png"
+                            alt="">
+                        <h1>Ceviche de pescado</h1>
+                    </div>
+                    <div class="menuItem" onclick="agregarItem(this)">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1BN4lznRy57fnTq1kTpxNrvgGU-xUAMXEcQ&usqp=CAU"
+                            alt="">
+                        <h1>Chicharrón de pescado</h1>
+                    </div>
+                    <!-- Agrega más botones según el menú de tu restaurante -->
+                </div>
+            </div>
+            <form id="formularioCanasta">
+                <h1>DATOS DE LA PERSONA<i class="fa-solid fa-user"></i></h1>
+                <label for="numeroBoleta">NUMERO DE BOLETA:</label>
+                <input type="text" id="numeroBoleta" oninput="actualizarCanastaFormulario()">
+
+                <label for="nombreCliente">NOMBRE CLIENTE:</label>
+                <input type="text" id="nombreCliente" oninput="actualizarCanastaFormulario()">
+
+                <label for="notas">NOTAS:</label>
+                <textarea id="notas" oninput="actualizarCanastaFormulario()"></textarea>
+            </form>
         </div>
 
-        <div id="menu" id="Saltados">
-            <h1 id="categoria">Saltados</h1>
-            <div class="container">
-                <!-- Botones del menú -->
-                <div class="menuItem" onclick="agregarItem(this)">
-                    <img src="https://i.ytimg.com/vi/r2oGrH__hT0/maxresdefault.jpg" alt="">
-                    <h1>1 Lomo saltado con papas</h1>
-                </div>
-                <div class="menuItem" onclick="agregarItem(this)">
-                    <img src="https://i.ytimg.com/vi/kkebV3kJkHg/maxresdefault.jpg" alt="">
-                    <h1>1 pollo saltado con papas</h1>
-                </div>
-                <div class="menuItem" onclick="agregarItem(this)">
-                    <img src="https://comidaperuanaweb.org/wp-content/uploads/2018/10/Receta-de-Tallarines-Saltado-de-Pollo-Carne-1-1-500x375.jpg"
-                        alt="">
-                    <h1>1 Tallarín saltado de pollo</h1>
-                </div>
-                <div class="menuItem" onclick="agregarItem(this)">
-                    <img src="https://larepublica.cronosmedia.glr.pe/migration/images/RGCTJNWBYFE3BKCXRQWDUQSA34.jpg"
-                        alt="">
-                    <h1>1 Tallarín saltado de lomo</h1>
-                </div>
-                <div class="menuItem" onclick="agregarItem(this)">
-                    <img src="https://content-cocina.lecturas.com/medio/2022/03/22/salteado-de-pollo-con-verduras-y-tallarines_9f35f4ac_1200x1200.jpg"
-                        alt="">
-                    <h1>1 Pollo al wok con fetuccini</h1>
-                </div>
-                <div class="menuItem" onclick="agregarItem(this)">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjXYnCq2KcS1RQ_nsDVVWBT_vxBEurXA9JbtlkFKnwoygDNry4_nCant5eScZi6yksSsE&usqp=CAU"
-                        alt="">
-                    <h1>1 Lomo al wok con fetuccini</h1>
-                </div>
-                <div class="menuItem" onclick="agregarItem(this)">
-                    <img src="https://okdiario.com/img/2017/01/12/arroz-chaufa-con-pollo_-receta-peruana.jpg" alt="">
-                    <h1>1 Arroz chaufa de pollo</h1>
-                </div>
-                <!-- Agrega más botones según el menú de tu restaurante -->
+
+        <div id="canasta">
+            <h2>COMANDA COCINA</h2>
+            <p id="fechaHora"></p>
+            <ul id="listaCanasta"></ul>
+            <div id="datosFormulario">
+                <!-- Contenedor para los datos del formulario -->
+            </div>
+            <div id="botonesCanasta">
+                <button id="btnImprimir" onclick="imprimirCanasta()">IMPRIMIR</button>
+                <button id="btnBorrarDatos" onclick="borrarDatos()">BORRAR</button>
             </div>
         </div>
+    </main>
 
-        <div id="menu" id="Pescados">
-            <h1 id="categoria">Pescados</h1>
-            <div class="container">
-                <!-- Botones del menú -->
-                <div class="menuItem" onclick="agregarItem(this)">
-                    <img src="https://res.cloudinary.com/dddlebwyr/image/upload/w_200/f_auto/q_auto/Gastronomia/Restaurante/ceviche_xsr4o2.png"
-                        alt="">
-                    <h1>1 Ceviche de pescado</h1>
-                </div>
-                <div class="menuItem" onclick="agregarItem(this)">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1BN4lznRy57fnTq1kTpxNrvgGU-xUAMXEcQ&usqp=CAU"
-                        alt="">
-                    <h1>1 Chicharrón de pescado</h1>
-                </div>
-                <!-- Agrega más botones según el menú de tu restaurante -->
-            </div>
-        </div>
-    </div>
+    <!-- SE CARGA LA LIBRERÍA DE ICONOS DE FONT AWESOME -->
 
-    
-    <div id="canasta">
-        <h2>Canasta</h2>
-        <ul id="listaCanasta"></ul>
-        <button id="btnImprimir" onclick="imprimirCanasta()">Imprimir Canasta</button>
-    </div>
-
+    <script async src="https://kit.fontawesome.com/f8eb9b1ffa.js" crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
 </body>
 
